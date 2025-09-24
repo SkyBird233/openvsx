@@ -20,6 +20,7 @@ public class TargetPlatform {
     public static final String NAME_LINUX_X64 = "linux-x64";
     public static final String NAME_LINUX_ARM64 = "linux-arm64";
     public static final String NAME_LINUX_ARMHF = "linux-armhf";
+    public static final String NAME_LINUX_LOONG64 = "linux-loong64";
     public static final String NAME_ALPINE_X64 = "alpine-x64";
     public static final String NAME_ALPINE_ARM64 = "alpine-arm64";
     public static final String NAME_DARWIN_X64 = "darwin-x64";
@@ -28,14 +29,14 @@ public class TargetPlatform {
 
     public static final String NAMES_PATH_PARAM_REGEX =
             NAME_WIN32_X64 + "|" + NAME_WIN32_IA32 + "|" + NAME_WIN32_ARM64 + "|" +
-                    NAME_LINUX_X64 + "|" + NAME_LINUX_ARM64 + "|" + NAME_LINUX_ARMHF + "|" +
+                    NAME_LINUX_X64 + "|" + NAME_LINUX_ARM64 + "|" + NAME_LINUX_ARMHF + "|" + NAME_LINUX_LOONG64 + "|" +
                     NAME_ALPINE_X64 + "|" + NAME_ALPINE_ARM64 + "|" +
                     NAME_DARWIN_X64 + "|" + NAME_DARWIN_ARM64 + "|" +
                     NAME_WEB + "|" + NAME_UNIVERSAL;
 
     public static final List<String> TARGET_PLATFORM_NAMES = List.of(
         NAME_WIN32_X64, NAME_WIN32_IA32, NAME_WIN32_ARM64,
-        NAME_LINUX_X64, NAME_LINUX_ARM64, NAME_LINUX_ARMHF,
+        NAME_LINUX_X64, NAME_LINUX_ARM64, NAME_LINUX_ARMHF, NAME_LINUX_LOONG64,
         NAME_ALPINE_X64, NAME_ALPINE_ARM64,
         NAME_DARWIN_X64, NAME_DARWIN_ARM64,
         NAME_WEB, NAME_UNIVERSAL

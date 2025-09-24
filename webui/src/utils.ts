@@ -155,6 +155,7 @@ namespace TargetPlatform {
     export const LINUX_X64 = 'linux-x64';
     export const LINUX_ARM64 = 'linux-arm64';
     export const LINUX_ARMHF = 'linux-armhf';
+    export const LINUX_LOONG64 = 'linux-loong64';
     export const ALPINE_X64 = 'alpine-x64';
     export const ALPINE_ARM64 = 'alpine-arm64';
     export const DARWIN_X64 = 'darwin-x64';
@@ -171,6 +172,7 @@ export function getTargetPlatforms(): string[] {
         TargetPlatform.LINUX_X64,
         TargetPlatform.LINUX_ARM64,
         TargetPlatform.LINUX_ARMHF,
+        TargetPlatform.LINUX_LOONG64,
         TargetPlatform.ALPINE_X64,
         TargetPlatform.ALPINE_ARM64,
         TargetPlatform.DARWIN_X64,
@@ -189,6 +191,7 @@ export function getTargetPlatformDisplayName(targetPlatform: string): string {
         [TargetPlatform.LINUX_X64, 'Linux x64'],
         [TargetPlatform.LINUX_ARM64, 'Linux ARM64'],
         [TargetPlatform.LINUX_ARMHF, 'Linux ARMhf'],
+        [TargetPlatform.LINUX_LOONG64, 'Linux LoongArch64'],
         [TargetPlatform.ALPINE_X64, 'Alpine Linux 64 bit'],
         [TargetPlatform.ALPINE_ARM64, 'Alpine Linux ARM64'],
         [TargetPlatform.DARWIN_X64, 'macOS Intel'],
